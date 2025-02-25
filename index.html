@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        
+        <div class="balance-cards">
+            <div class="card" id="deposit_card">
+                <h3>Total Deposit</h3>
+                <p id="deposit_text">$0</p>
+            </div>
+            <div class="card" id="withdraw_card">
+                <h3>Total Withdraw</h3>
+                <p id="withdraw_text">$0</p>
+            </div>
+            <div class="card" id="balance_card">
+                <h3>Total Balance</h3>
+                <p id="balance_text">$0</p>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <input type="number" id="amount" placeholder="Enter amount" min="0">
+            <div class="buttons">
+                <button class="deposit-btn" onclick="handleDeposit()">Deposit</button>
+                <button class="withdraw-btn" onclick="handleWithdraw()">Withdraw</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+    
+</body>
+</html>
